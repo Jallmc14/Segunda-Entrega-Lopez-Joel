@@ -1,0 +1,408 @@
+*{
+ margin:0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body {
+   background-color: #f0ebeb;
+   background-image: url(../img/fondo-768.jpg);
+   font-family: 'Heebo', sans-serif;
+    display: flex;
+    height: 500px;
+    flex-direction: column;
+    padding: 1rem;}
+ main{
+    display: flex;
+    flex-grow: 3;}
+ nav{
+    background-color: #ffffffd5;
+    border-radius: 5px;
+    }
+ header{
+    background-color: grey;
+    background-image: url(../img/fondo\ header.jpg);
+    border-radius: 5px;
+    }
+ nav, header, footer{
+    flex-grow:1;
+    padding: 1rem;
+    margin: 10px;
+   }
+ footer{
+   background-color: #ffffffd5;
+   border-radius: 5px;
+   display: flex;
+   justify-content: space-evenly;
+ }
+.tlf, .email, .direcc{
+   font-size: 19px;
+}  
+.logo{
+      width: 70px;
+  }
+.estiloPropio{
+   font-family: 'Englebert', cursive;
+   color: #3a2e2e;
+   text-align: center;
+   text-decoration: none;
+   font-size: 2.5rem;
+}
+h1, h2{
+   text-align: center;
+   font-family: 'Englebert', cursive;
+   font-size: 2.5rem;
+   color: #3a2e2e;
+}
+nav .menu a:hover{
+   color: black;
+   background-color: grey;
+   border-radius: 15px;
+}
+.contenedor {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(3, auto);
+	grid-template-rows: repeat(1, auto);
+	grid-template-areas:
+		'nosotros			odontologia   	ortodoncia';
+}
+
+.nosotros{
+   color: black;
+   background-color: rgb(210, 209, 209);
+   border-radius: 5px;
+   padding: 1rem;
+   margin: 10px;
+   width: 600px;
+   height: 600px;
+}
+.odontologia{
+   color: black;
+   background-color: rgb(210, 209, 209);
+   border-radius: 5px;
+   padding: 1rem;
+   margin: 10px;
+   width: 600px;
+   height: 600px;
+}
+.ortodoncia{
+   color: black;
+   background-color: rgb(210, 209, 209);
+   border-radius: 5px;
+   padding: 1rem;
+   margin: 10px;
+   width: 600px;
+   height: 600px;
+}
+@media (max-width: 1200px) {
+   body{
+      font-size: 14px;
+   }
+   .contenedor {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: repeat(2, auto);
+      grid-template-areas:
+         'nosotros odontologia'	
+         'ortodoncia ortodoncia';}
+   .tlf, .email, .direcc{
+            font-size: 15px;}   
+}
+@media (max-width: 768px) {
+   body{
+      background-color: #f0ebeb;
+      background-image: url(../img/fondo-600.jpg)}
+   .contenedor {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(1, auto);
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas:
+         'nosotros'
+         'odontologia'	
+         'ortodoncia';}
+   .nosotros{
+      color: black;
+      background-color: rgb(210, 209, 209);
+      border-radius: 5px;
+      padding: 1rem;
+      margin: 10px;
+      width: 50em;
+      height: 37em;}
+   .odontologia{
+      color: black;
+      background-color: rgb(210, 209, 209);
+      border-radius: 5px;
+      padding: 1rem;
+      margin: 10px;
+      width: 50em;
+      height: 35em;}
+   .ortodoncia{
+      color: black;
+      background-color: rgb(210, 209, 209);
+      border-radius: 5px;
+      padding: 1rem;
+      margin: 10px;
+      width: 50em;
+      height: 30em;}
+   .tlf, .email, .direcc{
+      font-size: 14px;
+   }
+
+}
+   
+@media (max-width: 576px) {
+   body{
+      background-color: #f0ebeb;
+      background-image: url(../img/fondo-480.jpg);}
+   .contenedor {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(1, auto);
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas:
+         'nosotros'
+         'odontologia'	
+         'ortodoncia';
+   }
+   .nosotros{
+      color: black;
+      background-color: rgb(210, 209, 209);
+      border-radius: 5px;
+      padding: 1rem;
+      margin: 10px;
+      width: 36em;
+      height: 37em;}
+        
+   .odontologia{
+      color: black;
+      background-color: rgb(210, 209, 209);
+      border-radius: 5px;
+      padding: 1rem;
+      margin: 10px;
+      width: 36em;
+      height: 35em;}
+   .ortodoncia{
+      color: black;
+      background-color: rgb(210, 209, 209);
+      border-radius: 5px;
+      padding: 1rem;
+      margin: 10px;
+      width: 36em;
+      height: 30em;}
+   .imgMovil{
+      width: 32em;} 
+   .tlf, .email, .direcc{
+      font-size: 12px;}
+}
+.contenedor2{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 30px;
+   align-items: center;
+}
+.texto{
+   color: black;
+   background-color: rgb(210, 209, 209);
+   border-radius: 5px;
+   padding: 1rem;
+   margin: 10px;
+   width: 815px;
+   height: 125px;}
+@media (max-width: 576px) {
+   .texto{
+      border-radius: 5px;
+      padding: 0.5rem;
+      margin: 5px;
+      width: 36em;
+      height: 11em;
+   }
+   .carroImag{
+      border-radius: 5px;
+      padding: 0.5rem;
+      margin: 5px;
+      width: 36em;
+      height: 30em;
+   }
+   .video1{
+      border-radius: 5px;
+      padding: 0.5rem;
+      margin: 5px;;
+      width: 36em;
+      height: 30em;
+   }
+}
+.formulario{
+   width: 500px;
+   margin:20px auto;
+   border: solid gray 2px;
+   padding: 1rem;   
+}
+.formu{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   gap: 30px;
+}
+.imagRh{
+   width: 500px;
+   margin:20px auto;
+   padding: 2rem;   
+}
+@media (max-width: 768px){
+   .formu{
+      display: grid;
+      align-items: center;
+      gap: 5px;
+      grid-template-columns: repeat(1, auto);
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas:
+         'contac'
+         'form1'	
+         'imagRh';}
+}
+.contenedor3{
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(3, auto);
+	grid-template-rows: repeat(1, auto);
+	grid-template-areas:
+		'implantes			ortodoncia   	protesis';
+}
+.implantes{
+   color: black;
+   background-color: rgb(210, 209, 209);
+   border-radius: 5px;
+   padding: 1rem;
+   margin: 10px;
+   width: 570px;
+   height: 450px;
+}
+.ortodoncia2{
+   color: black;
+   background-color: rgb(210, 209, 209);
+   border-radius: 5px;
+   padding: 1rem;
+   margin: 10px;
+   width: 570px;
+   height: 450px;
+}
+.protesis{
+   color: black;
+   background-color: rgb(210, 209, 209);
+   border-radius: 5px;
+   padding: 1rem;
+   margin: 10px;
+   width: 570px;
+   height: 450px;
+}
+.hove:hover{
+   opacity: 1;
+   border: white solid 2px;
+   border-radius: 20px;
+}
+@media (max-width: 1200px) {
+   body{
+      font-size: 14px;
+   }
+   .contenedor3 {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: repeat(2, auto);
+      grid-template-areas:
+         'implantes ortodoncia2'	
+         'protesis protesis';}
+   .tlf, .email, .direcc{
+            font-size: 15px;}   
+}
+@media (max-width: 768px) {
+   body{
+      background-color: #f0ebeb;
+      background-image: url(../img/fondo-600.jpg)}
+   .contenedor3 {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(1, auto);
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas:
+         'implantes'
+         'ortodoncia2'	
+         'protesis';}
+   .implantes{
+      color: black;
+      background-color: rgb(210, 209, 209);
+      border-radius: 5px;
+      padding: 1rem;
+      margin: 10px;
+      width: 40em;
+      height: 28em;}
+   .ortodoncia2{
+      color: black;
+      background-color: rgb(210, 209, 209);
+      border-radius: 5px;
+      padding: 1rem;
+      margin: 10px;
+      width: 40em;
+      height: 28em;}
+   .protesis{
+      color: black;
+      background-color: rgb(210, 209, 209);
+      border-radius: 5px;
+      padding: 1rem;
+      margin: 10px;
+      width: 40em;
+      height: 28em;}
+   .tlf, .email, .direcc{
+      font-size: 14px;
+   }
+
+}
+   
+@media (max-width: 576px) {
+   body{
+      background-color: #f0ebeb;
+      background-image: url(../img/fondo-480.jpg);}
+   .contenedor3 {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(1, auto);
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas:
+         'implantes'
+         'ortodoncia2'	
+         'protesis';
+   }
+   .implantes{
+      color: black;
+      background-color: rgb(210, 209, 209);
+      border-radius: 5px;
+      padding: 1rem;
+      margin: 10px;
+      width: 35em;
+      height: 25em;}
+        
+   .ortodoncia2{
+      color: black;
+      background-color: rgb(210, 209, 209);
+      border-radius: 5px;
+      padding: 1rem;
+      margin: 10px;
+      width: 35em;
+      height: 25em;}
+   .protesis{
+      color: black;
+      background-color: rgb(210, 209, 209);
+      border-radius: 5px;
+      padding: 1rem;
+      margin: 10px;
+      width: 35em;
+      height: 25em;}
+   .hove{
+      width: 450px;
+   }
+   .tlf, .email, .direcc{
+      font-size: 12px;}
+   }
